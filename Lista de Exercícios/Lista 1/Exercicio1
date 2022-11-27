@@ -1,0 +1,12 @@
+/* OBJETIVO: Construa um algoritmo que calcule o valor da área de um triangulo, a partir do valor da base e altura. */
+
+{
+    int b, altura, area;
+    Console.WriteLine("Digite o valor da base: ");
+    b = int.Parse(Console.ReadLine());
+    Console.WriteLine("Digite o valor da altura: ");
+    altura = int.Parse(Console.ReadLine());
+    area = (b * altura) / 2;
+    Console.Write("A área é ");
+    Console.WriteLine(area);
+}
