@@ -1,0 +1,19 @@
+/* Elabore um algoritmo que leia o nome de um vendedor, o seu salário fixo e o total de vendas
+efetuadas por ele no mês (em dinheiro). Sabendo que esse vendedor ganha 20% de comissão sobre
+suas vendas efetuadas, faça que o algoritmo informe o seu nome, o salário fixo e salário no final do mês. */
+
+{
+    string nome;
+    float salarioFixo, vendas, salarioFinal, comissao;
+
+    Console.WriteLine("Digite o seu nome: ");
+    nome = Console.ReadLine();
+    Console.WriteLine("Digite o seu salário: ");
+    salarioFixo = float.Parse(Console.ReadLine());
+    Console.WriteLine("Digite o seu total de vendas em dinheiro: ");
+    vendas = float.Parse(Console.ReadLine());
+    comissao = (20 * 100) / vendas;
+    salarioFinal = comissao + salarioFixo;
+    Console.WriteLine("O seu salário final é: ");
+    Console.WriteLine(salarioFinal);
+}
